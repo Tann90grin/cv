@@ -1,5 +1,7 @@
 body{
   background-color: #EDF5E1;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-bar {
@@ -190,4 +192,6 @@ input[type="submit"]:hover {
 
 .nav-left {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
