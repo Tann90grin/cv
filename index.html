@@ -14,39 +14,42 @@
 </head>
 
 <body cz-shortcut-listen = "true">
-    <div class="navigation-bar">
-        <div class="links">
-            <ul class="links-list">
-                <li>
-                    <a href="https://www.linkedin.com/in/henry-wu-759697256/" target="_blank" class="linkedin-button">
-                        <div class="icon-container"><img src="./index_files/LinkedIn_icon.svg.png" alt="LinkedIn"></div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/Tann90grin" target="_blank" class="github-button">
-                        <div class="icon-container"><img src="./index_files/GitHub-Mark-ea2971cee799.png" alt="GitHub"></div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="navigation">
-            <ul class="nav-list">
-                <li>
-
-                </li>
-            </ul>
-        </div>
+    <div class="navigation">
+        <div class = "nav-left">
+            <a href="https://www.linkedin.com/in/henry-wu-759697256/" target="_blank" class="linkedin-button">
+                <div class="icon-container"><img src="./index_files/LinkedIn_icon.svg.png" alt="LinkedIn"></div>
+            </a>
+            <a href="https://github.com/Tann90grin" target="_blank" class="github-button">
+                <div class="icon-container"><img src="./index_files/GitHub-Mark-ea2971cee799.png" alt="GitHub"></div>
+            </a>
+        </div>    
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-    <div class="top-container">
+    <div id="home">
+        <!-- Your content for the Home section -->
         <div class="title-text">
             <h1>Henry Wu</h1>
+            <img class="profile-pic" src="./index_files/20240215_160937.jpg" alt="pic" width="200" height="200">  
             <h3><em>2A Electrical Engineering Student, <strong><a href="https://uwaterloo.ca/electrical-computer-engineering/">University of Waterloo</a></strong></em></h3>
         </div>
     </div>
-    <div class="middle-container">
-        <img class="profile-pic" src="./index_files/20240215_160937.jpg" alt="pic" width="200" height="200">       
+
+    <div id="about">
+        <!-- Your content for the About section -->
+        
     </div>
-    <div class="bottom-container">
+
+    <div id="projects">
+        <!-- Your content for the Portfolio section -->
+    </div>
+
+    <div id="contact">
+        <!-- Your content for the Contact section -->
         <h2>Contact Me</h2>
         <form class="" action="mailto:h27wu@uwaterloo.ca" method="post" enctype="text/plain">
             <label>Your Name:</label>
@@ -56,7 +59,7 @@
             <label>Your Message:</label><br>
             <textarea name="name" rows="10" cols="30"></textarea><br>
             <input type="submit" name="">
-        </form>    
+        </form>   
     </div>
 </body> 
 

@@ -8,12 +8,6 @@ body{
   left: 20px;
 }
 
-.links-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-}
-
 .linkedin-button,
 .github-button {
     border-radius: 50%;
@@ -50,14 +44,20 @@ body{
 .links {
   margin-right: 8px;
 }
-.top-container {
-  margin-top: 100px;
+
+#home {
+  height: 80vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+  display: flex;
   background-color: #00FF7F;
   text-align: center;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.middle-container {
+.about {
   margin-top: 100px;
   display: flex;
   background-color: #EDF5E1;
@@ -66,7 +66,7 @@ body{
   align-items: center;
 }
 
-.bottom-container {
+#contact {
   text-align: center;
   margin-top: 100px;
   background-color: #EDF5E1;
@@ -141,4 +141,53 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #808080;
+}
+
+/* Style for the navigation bar */
+.navigation {
+  background-color: rgba(135, 206, 250, 0.7);
+  padding: 10px; /* Padding inside the navigation bar */
+  position: fixed; /* Fix the navigation bar at the top of the viewport */
+  width: 100%; /* Full width of the viewport */
+  top: 0; /* Distance from the top of the viewport */
+  z-index: 1000; /* Set the z-index to make sure it's above other elements */
+  display: flex;
+  justify-content: space-between; /* Space items evenly on the main axis */
+  align-items: center; /* Center items on the cross axis */
+  transition: background-color 0.3s ease
+}
+
+/* Style for the navigation list */
+.nav-list {
+  list-style: none; /* Remove default list styles */
+  display: flex; /* Display the list items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for each navigation item */
+.nav-list li {
+  margin-right: 100px; /* Spacing between each list item */
+}
+
+/* Style for each navigation link */
+.nav-list a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Default text color */
+  margin: 50px auto 0 auto;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  padding-bottom: 10px;
+  font-size: 32px
+}
+
+/* Style for the active link and hover effect */
+.nav-list a:hover,
+.nav-list a.active {
+  color: #808080; /* Color when hovered or active */
+}
+
+.nav-left {
+  display: flex;
 }
