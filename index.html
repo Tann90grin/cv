@@ -26,41 +26,108 @@
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
+    
     <div id="home">
         <!-- Your content for the Home section -->
         <div class="title-text">
             <h1>Henry Wu</h1>
             <img class="profile-pic" src="./index_files/20240215_160937.jpg" alt="pic" width="200" height="200">  
             <h3><em>2A Electrical Engineering Student, <strong><a href="https://uwaterloo.ca/electrical-computer-engineering/">University of Waterloo</a></strong></em></h3>
+            <div id="scroll-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12L12 19L19 12"></path>
+                </svg>
+            </div>
         </div>
     </div>
 
-    <div id="about">
+    <div id="about" class="fade-in">
         <!-- Your content for the About section -->
-        
+        <h2>About Me</h2>
+        <h3>Hello there! 👋 I'm Henry Wu, a passionate and dedicated 2A Electrical Engineering student at the University of Waterloo. I thrive in the world of technology, with a diverse skill set that encompasses software development, electrical engineering, and innovative problem-solving.</h3>
+
     </div>
 
-    <div id="projects">
+    <div id="projects" class="fade-in">
         <!-- Your content for the Portfolio section -->
-    </div>
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="showDetails('project1')">
+                <h2><strong>Conveyor System Improvement</strong></h2>
+                <img src="./index_files/20231026_103238.jpg" alt="Project 1">
+                <div class="project-details" id="project2-details">
+                    <p>Optimized Mechatronics course labs and elevated realism in Management Engineering courses through strategic enhancements to conveyor system simulations.</p>
 
-    <div id="contact">
+                    <p>    Feeder Conveyor Simulation:
+                        Programmed and optimized PLC programs using Node-Red, introducing a cutting-edge feeder conveyor with shaped boxes for a lifelike parcel simulation.
+                        Integrated an Arduino UNO seamlessly with the existing PLC, driving the stepper motor of the new conveyor to augment functionality.
+                    </p>    
+                        SCADA System Development:
+                        Developed a comprehensive SCADA system using Ignition to monitor conveyor status, ensuring real-time visibility into system performance.
+                    <p>    
+                        Linux Environment Establishment:
+                        Established a Linux environment for Jetson Nanos, enabling the seamless execution of computer vision programs.
+                        Implemented communication with an MQTT broker, fostering seamless data transfer between the Ignition server, PLC, and Jetson Nano.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('project2')">
+                <h2><strong>Cycle Time Tracker</strong></h2>
+                <img src="./index_files/CycleTime.PNG" alt="Project 2">
+                <div class="project-details" id="project1-details">
+
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('project3')">
+                <h2><strong>FPGA VHDL Programming</strong></h2>
+                <img src="./index_files/229017576-7a453a0e-a5d2-4df4-b211-900cd840dbe1.png" alt="Project 3">
+                <div class="project-details" id="project1-details">
+                    <p>
+                        Hands-on projects in digital circuit design and VHDL programming (using Intel Quartus Prime).
+                    </p>
+                    <p>
+                    
+                        Implemented an HVAC system on an FPGA board. This system monitors and displays the current and desired temperature on a 7-segment display while controlling the air conditioner to achieve the desired room temperature.
+                    </p>
+                    <p>
+                        Designed a traffic light state machine for an intersection simulation. In this project, I developed a Moore Machine with 16 states. It responds dynamically, switching the green light to amber immediately if pedestrians are waiting to cross and there are no vehicles crossing the other direction.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('project4')">
+                <h2><strong>Idling Monitor</strong></h2>
+                <img src="./index_files/20221122_201219_copy.jpg" alt="Project 4">
+                <div class="project-details" id="project1-details">
+                    <p> 
+                        Developed a robust idling monitor device using key components: MQ135 gas sensor, STM32 Nucleo-F401RE microcontroller, 20x4 LCD module, LED, and HC-SR04 ultrasonic distance sensor.
+                    </p>
+                    <p>
+                        Implemented advanced functionality to detect idling vehicles based on both motion and carbon dioxide concentration, displaying real-time data on a 20x4 LCD and providing warnings through an LED.
+                    </p>
+                    <p>
+                        Enhanced proficiency in microcontroller programming and sensor integration through the successful execution of this project.
+                    </p>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+
+    <div id="contact" class="fade-in">
         <!-- Your content for the Contact section -->
         <h2>Contact Me</h2>
         <form class="" action="mailto:h27wu@uwaterloo.ca" method="post" enctype="text/plain">
-            <label>Your Name:</label>
-            <input type="text" name="" value=""><br>
-            <label>Your Email:</label>
-            <input type="email" name="" value=""><br>
-            <label>Your Message:</label><br>
-            <textarea name="name" rows="10" cols="30"></textarea><br>
+            <input type="text" name="" value="" placeholder="Name:"><br>
+            <input type="email" name="" value="" placeholder="Email:"><br>
+            <textarea name="name" rows="10" cols="30" placeholder="Content:"></textarea><br>
             <input type="submit" name="">
         </form>   
     </div>
+
+    <script src="./index_files/animation.js"></script>
 </body> 
 
 </html>
