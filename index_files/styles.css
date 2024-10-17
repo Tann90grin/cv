@@ -316,6 +316,14 @@ input[type="submit"]:hover {
   pointer-events: none;
 }
 
+.content-background {
+  background-color: #FFFFED; 
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  margin: 20px auto;
+  max-width: 700px;
+}
+
 .fade-in {
   animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
